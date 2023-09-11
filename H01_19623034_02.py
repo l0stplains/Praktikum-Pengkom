@@ -1,7 +1,7 @@
 # Problem 2
 # Program menerima input berupa dua buah titik pada bidang kartesius.
-# Program akan menentukan apakah garis yang melalui kedua titik tersebut
-# adalah garis horizontal, vertikal, atau garis bergradien tertentu.
+# Program akan menentukan apakah garis yang melalui kedua titik tersebut adalah garis
+# horizontal, vertikal, atau garis bergradien tertentu.
 
 # Kamus
 # x1: Absis dari titik pertama (int)
@@ -17,13 +17,13 @@ y2 = int(input("Masukkan y2: "))
 
 # Tentukan apakah gradien garis terdefinisi (Jika tidak maka garis vertikal)
 if x2 - x1 != 0:
-  gradien = (y2 - y1) / (x2 - x1)
+    gradien = (y2 - y1) / (x2 - x1)
 
-  # Tentukan apakah garis merupakan garis horizontal
-  if gradien == 0:
-    print("Garis tersebut merupakan garis horizontal.")
-  else:
-    print(f"Garis tersebut memiliki gradien {gradien}.")
+    # Tentukan apakah garis merupakan garis horizontal
+    if gradien == 0:
+        print("Garis tersebut merupakan garis horizontal.")
+    else:
+        print(f"Garis tersebut memiliki gradien {gradien}.")
 
 else:
-  print("Garis teresbut merupakan garis vertikal.")
+    print("Garis teresbut merupakan garis vertikal.")
