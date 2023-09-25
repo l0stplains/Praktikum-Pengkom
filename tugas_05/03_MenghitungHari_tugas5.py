@@ -40,15 +40,15 @@ print("\nTanggal Kedua")
 bulan2 = int(input(opsi_bulan))
 tanggal2 = int(input("Masukkan tanggal pada bulan tersebut: "))
 
-# Definisikan jumlah hari sebelum setiap bulan
+# Definisikan jumlah hari dari awal tahun sampai sebelum bulan tertentu
 jan = 0
 feb = jan + 31
-mar = feb + 28
 
+# Cek apakah tahun merupakan tahun kabisat
 if tahun % 4 == 0:
-  mar += 1
-else: # Complete If Else Statement
-  mar = mar
+  mar = feb + 29
+else: # tahun % 4 != 0
+  mar = feb + 28
 
 apr = mar + 31
 mei = apr + 30
@@ -60,7 +60,7 @@ okt = sep + 30
 nov = okt + 31
 des = nov + 30
 
-# Tambah jumlah hari sebelum bulan dengan hari tanggal pada bulan tersebut
+# Tambah jumlah hari sebelum bulan dengan hari dari tanggal pada bulan tersebut
 if bulan1 == 1 and 0 < tanggal1 <= feb-jan:
   tanggal1 += jan
 elif bulan1 == 2 and 0 < tanggal1 <= mar-feb:
@@ -119,7 +119,7 @@ else:
 
 if tanggal1 > tanggal2:
   rentang_hari = tanggal1 - tanggal2
-else:
+else: # tanggal1 <= tanggal2
   rentang_hari = tanggal2 - tanggal1
 
 print(f"Jumlah hari dari rentang tanggal pertama dan kedua adalah {rentang_hari} hari")

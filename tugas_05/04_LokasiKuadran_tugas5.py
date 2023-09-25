@@ -17,12 +17,12 @@ if x == 0 and y == 0:
 elif x == 0:
   if y > 0:
     print("Titik berada pada sumbu y positif")
-  else:
+  else: # y < 0
     print("Titik berada pada sumbu y negatif")
 elif y == 0:
   if x > 0:
     print("Titik berada pada sumbu x positif")
-  else:
+  else: # x < 0
     print("Titik berada pada sumbu x negatif")
 elif x > 0 and y > 0:
   print("Titik berada pada kuadran I")
@@ -30,5 +30,5 @@ elif x < 0 and y > 0:
   print("Titik berada pada kuadran II")
 elif x < 0 and y < 0:
   print("Titik berada pada kuadran III")
-else:
+else: # x > 0 and y < 0
   print("Titik berada pada kuadran IV")

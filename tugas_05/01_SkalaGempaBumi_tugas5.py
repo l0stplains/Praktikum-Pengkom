@@ -13,7 +13,9 @@
 sr = float(input("Masukkan Skala Ritcher dari gempa bumi: "))
 
 kondisi = ""
-if sr < 2.0:
+if sr < 0:
+  kondisi = "Tidak terdefinisi"
+elif sr < 2.0:
   kondisi = "Micro"
 elif sr < 3.9:
   kondisi = "Minor"
@@ -23,8 +25,8 @@ elif sr < 5.9:
   kondisi = "Moderate"
 elif sr < 6.9:
   kondisi = "Strong"
-elif sr < 7.9:
+elif sr <= 7.9:
   kondisi = "Major"
-else:
+else: # sr > 7.9
   kondisi = "Great"
 print(f"Gempa bumi tersebut berkondisi {kondisi}")
