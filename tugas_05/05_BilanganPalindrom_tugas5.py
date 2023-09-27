@@ -10,7 +10,7 @@
 
 # ALGORITMA
 
-bil = int(input("Masukkan suatu bilangan bulat positif diantara 0 sampai 9999999999 (bilangan dengan 1 sampai 10 digit): "))
+bil = int(input("Masukkan suatu bilangan bulat positif diantara 0 sampai 9999999999 (maksimal 10 digit): "))
 
 isPalindrome = False
 
