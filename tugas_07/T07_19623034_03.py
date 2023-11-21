@@ -1,4 +1,18 @@
-# Not final version, still waiting for review and adding some description later
+# Latihan-3 T07_19623034_03.py
+# Nama: Refki Alfarizi
+# NIM: 19623034
+# Deskripsi: Program mencari nilai terkecil dari array T
+
+# KAMUS
+# t : int
+# T : array [t] of int
+# mini : int
+# i : int
+
+# t = 10
+# T = [5, 7, 3, 2, 7, 12, 46, 4, 10, 9]
+
+# ALGORITMA
 
 t = int(input("Masukkan nilai T (ukuran array): "))
 
@@ -15,3 +29,4 @@ for i in range(1, t):
   
 print(f"Nilai terkecil = {mini}")
 
+# Nilai terkecil = 2
